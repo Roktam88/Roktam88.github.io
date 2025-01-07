@@ -55,16 +55,6 @@
         .contact-form button:hover {
             background-color: #45a049;
         }
-        .faq {
-            margin-top: 2rem;
-        }
-        .faq h3 {
-            color: #555;
-        }
-        .faq p {
-            margin: 0.5rem 0;
-            line-height: 1.6;
-        }
         footer {
             text-align: center;
             padding: 1rem 0;
@@ -83,7 +73,7 @@
 <main>
     <section class="contact">
         <h2>Contact Us</h2>
-        <form class="contact-form" action="/submit_support" method="POST">
+        <form class="contact-form" action="mailto:support@myscores.me" method="GET">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
@@ -95,18 +85,6 @@
 
             <button type="submit">Send Message</button>
         </form>
-    </section>
-
-    <section class="faq">
-        <h2>Frequently Asked Questions (FAQ)</h2>
-        <h3>1. How can I reset my password?</h3>
-        <p>You can reset your password by clicking on the "Forgot Password" link on the login page.</p>
-
-        <h3>2. How do I track my order?</h3>
-        <p>You can track your order using the tracking link sent to your email after purchase.</p>
-
-        <h3>3. How can I contact customer service?</h3>
-        <p>You can use the contact form above or email us at support@example.com.</p>
     </section>
 </main>
 
