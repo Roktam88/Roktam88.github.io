@@ -1,129 +1,64 @@
-<!doctype html>
-                        <html>
-                            <head>
-                                <meta charset='utf-8'>
-                                <meta name='viewport' content='width=device-width, initial-scale=1'>
-                                <title>US Chicken Dev</title>
-                                <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
-                                <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
-                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-                                <style>::-webkit-scrollbar {
-                                  width: 8px;
-                                }
-                                /* Track */
-                                ::-webkit-scrollbar-track {
-                                  background: #f1f1f1; 
-                                }
-                                 
-                                /* Handle */
-                                ::-webkit-scrollbar-thumb {
-                                  background: #888; 
-                                }
-                                
-                                /* Handle on hover */
-                                ::-webkit-scrollbar-thumb:hover {
-                                  background: #555; 
-                                } * {
-    margin: 0;
-    padding: 0
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Scores - Empower Your Classroom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-200 font-sans antialiased">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-700 to-indigo-600 text-white p-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold tracking-tight">Student Scores</h1>
+            <nav>
+                <ul class="flex space-x-6 text-sm font-medium">
+                    <li><a href="landing.html" class="text-blue-100 border-b-2 border-blue-200">Home</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-200 transition">Contact</a></li>
+                    <li><a href="term.html" class="hover:text-blue-200 transition">Terms</a></li>
+                    <li><a href="privacy.html" class="hover:text-blue-200 transition">Privacy</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-body {
-    background-color: #000
-}
+    <!-- Main Content -->
+    <main class="container mx-auto my-12">
+        <!-- Hero Section -->
+        <section class="bg-white rounded-xl shadow-2xl p-12 text-center">
+            <h2 class="text-5xl font-extrabold text-gray-800 mb-6">Student Scores: Empower Your Classroom</h2>
+            <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">Designed for teachers, Student Scores simplifies classroom management. Record student achievements, track attendance, create groups, and view detailed rankings—all in one intuitive iOS app.</p>
+            <a href="https://apps.apple.com/us/app/student-scores/id6446044150?l=vi" class="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-semibold py-4 px-8 rounded-full hover:from-blue-700 hover:to-indigo-700 transition transform hover:-translate-y-1 shadow-lg">
+                Download on the App Store
+            </a>
+        </section>
 
-.card {
-    width: 350px;
-    background-color: #efefef;
-    border: none;
-    cursor: pointer;
-    transition: all 0.5s;
-}
+        <!-- Features Section -->
+        <section class="my-16">
+            <h3 class="text-3xl font-bold text-gray-800 text-center mb-12">Key Features</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Track Achievements</h4>
+                    <p class="text-gray-600">Easily record student participation, answers, and grades during lessons.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Random Selection & Groups</h4>
+                    <p class="text-gray-600">Engage students with random selection and organize them into groups effortlessly.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Rankings & Attendance</h4>
+                    <p class="text-gray-600">View detailed student rankings and track attendance with ease.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-.image img {
-    transition: all 0.5s
-}
-
-.card:hover .image img {
-    transform: scale(1.5)
-}
-
-.btn {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%
-}
-
-.name {
-    font-size: 22px;
-    font-weight: bold
-}
-
-.idd {
-    font-size: 14px;
-    font-weight: 600
-}
-
-.idd1 {
-    font-size: 12px
-}
-
-.number {
-    font-size: 22px;
-    font-weight: bold
-}
-
-.follow {
-    font-size: 12px;
-    font-weight: 500;
-    color: #444444
-}
-
-.btn1 {
-    height: 40px;
-    width: 150px;
-    border: none;
-    background-color: #000;
-    color: #aeaeae;
-    font-size: 15px
-}
-
-.text span {
-    font-size: 13px;
-    color: #545454;
-    font-weight: 500
-}
-
-.icons i {
-    font-size: 19px
-}
-
-hr .new1 {
-    border: 1px solid
-}
-
-.join {
-    font-size: 14px;
-    color: #a0a0a0;
-    font-weight: bold
-}
-
-.date {
-    background-color: #ccc
-}</style>
-                                </head>
-                                <body className='snippet-body'>
-                                <div class="container mt-4 mb-4 p-3 d-flex justify-content-center"> <div class="card p-4"> <div class=" image d-flex flex-column justify-content-center align-items-center"> <button class="btn btn-secondary"> <img src="https://i.imgur.com/8M0nmHp.png" height="100" width="100" /></button> <span class="name mt-3">US Chicken Dev</span> <span class="idd">@us.chicken.dev</span> <div class="d-flex flex-row justify-content-center align-items-center gap-2"> <span class="idd1">taskiran1509@icloud.com</span> <span><i class="fa fa-copy"></i></span> </div> <div class="d-flex flex-row justify-content-center align-items-center mt-3"> <span class="number">1 <span class="follow">Followers</span></span> </div> <div class=" d-flex mt-2"> <button class="btn1 btn-dark">Edit Profile</button> </div> <div class="text mt-3"> <span>US Chicken Dev is a iOS Developer, He is a chicken!.<br><br> Some of his applications: COLORFUL Filter  </span> </div> <div class="gap-3 mt-3 icons d-flex flex-row justify-content-center align-items-center"> <span><i class="fa fa-twitter"></i></span> <span><i class="fa fa-facebook-f"></i></span> <span><i class="fa fa-instagram"></i></span> <span><i class="fa fa-linkedin"></i></span> </div> <div class=" px-2 rounded mt-4 date "> <span class="join">Joined Jan,2025</span> </div> </div> </div>
-</div>
-                                <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
-                                <script type='text/javascript' src='#'></script>
-                                <script type='text/javascript' src='#'></script>
-                                <script type='text/javascript' src='#'></script>
-                                <script type='text/javascript'>#</script>
-                                <script type='text/javascript'>var myLink = document.querySelector('a[href="#"]');
-                                myLink.addEventListener('click', function(e) {
-                                  e.preventDefault();
-                                });</script>
-                            
-                                </body>
-                            </html>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 p-6">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2025 Student Scores. All rights reserved.</p>
+            <p class="mt-2"><a href="mailto:hello@studentscores.app" class="hover:text-blue-400 transition">hello@studentscores.app</a></p>
+        </div>
+    </footer>
+</body>
+</html>
